@@ -1,0 +1,72 @@
+.container {
+  position: relative;
+  padding: 6rem 4rem 2rem 4rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.divider {
+  min-height: 2rem;
+  padding: 4rem 0 0 0;
+  background-color: #111;
+}
+
+.about {
+  background-color: #eee;
+}
+.profilesContainer {
+  background-color: #007155;
+}
+.sectionTitle {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.aboutTitle {
+  color: #fff;
+}
+.profilesTitle {
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.waveDivider1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waveDivider1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 75px;
+}
+
+.waveDivider1 .shapeFill {
+  fill: #eee;
+}
+
+.angleDivider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.angleDivider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 118px;
+}
+
+.angleDivider .shapeFill {
+  fill: #111;
+}
