@@ -1,6 +1,6 @@
 import React from "react"
-import navStyles from "./nav.module.css"
-import Nav from "./nav"
+import NavStyles from "./nav.module.css"
+import Nav from "./navLinks"
 
 class HomeNav extends React.Component {
   constructor(props) {
@@ -31,7 +31,7 @@ class HomeNav extends React.Component {
     }
   }
 
-  handleResize() {
+  handleResize = () => {
     if (this.navRef) {
       let newHeight = window.innerHeight
       let heightDif = newHeight - this.state.height
@@ -42,12 +42,14 @@ class HomeNav extends React.Component {
   }
 
   handleStickyNav() {
-    if (this.navRef && window.pageYOffset > this.state.navOffsetTop) {
-      this.navRef.current.classList.add(navStyles.stickyNav)
-      this.navRef.current.classList.remove(navStyles.heroNav)
-    } else {
-      this.navRef.current.classList.remove(navStyles.stickyNav)
-      this.navRef.current.classList.add(navStyles.heroNav)
+    if (this.navRef) {
+      if (window.pageYOffset > this.state.navOffsetTop) {
+        this.navRef.current.classList.add(NavStyles.stickyNav)
+        this.navRef.current.classList.remove(NavStyles.heroNav)
+      } else {
+        this.navRef.current.classList.remove(NavStyles.stickyNav)
+        this.navRef.current.classList.add(NavStyles.heroNav)
+      }
     }
   }
 
@@ -55,7 +57,7 @@ class HomeNav extends React.Component {
     return (
       <div
         ref={this.navRef}
-        className={`nav-container ${navStyles.navContainer} ${navStyles.heroNav}`}
+        className={`nav-container ${NavStyles.navContainer} ${NavStyles.heroNav}`}
       >
         <Nav />
       </div>

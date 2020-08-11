@@ -14,7 +14,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  flex-wrap: wrap-reverse;
+  align-items: flex-end;
 }
 
 .horizontalContainer div {
@@ -27,6 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin: 2rem;
 }
 
 .copyright {

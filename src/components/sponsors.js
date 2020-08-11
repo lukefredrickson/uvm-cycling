@@ -31,7 +31,7 @@ const Sponsors = props => {
         link="https://www.skirack.com/"
       />
       <SponsorImage
-        filename="pitviper"
+        filename="pit-viper"
         alt="Pitviper Sunglasses"
         link="https://pitvipersunglasses.com/"
       />
@@ -43,7 +43,7 @@ const Sponsors = props => {
       <SponsorImage
         filename="uvm-bikes"
         alt="UVM Bikes"
-        link="https://takeoutshorts.com/"
+        link="https://www.facebook.com/UVMBIKES/"
       />
     </div>
   )

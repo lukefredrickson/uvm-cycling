@@ -1,6 +1,6 @@
 import React from "react"
-import Nav from "./nav"
-import navStyles from "./nav.module.css"
+import Nav from "./navLinks"
+import NavStyles from "./nav.module.css"
 import LogoStyles from "./logo.module.css"
 
 class PrimaryNav extends React.Component {
@@ -21,18 +21,12 @@ class PrimaryNav extends React.Component {
 
   trackScrolling = () => {
     if (this.topNavRef && this.fixedNavRef) {
-      this.handleStickyNav()
-    }
-  }
-
-  handleStickyNav() {
-    if (this.topNavRef && this.fixedNavRef) {
       if (window.pageYOffset > 0) {
-        this.fixedNavRef.current.classList.remove(navStyles.hidden)
-        this.topNavRef.current.classList.add(navStyles.hidden)
+        this.fixedNavRef.current.classList.remove(NavStyles.hidden)
+        this.topNavRef.current.classList.add(NavStyles.hidden)
       } else {
-        this.fixedNavRef.current.classList.add(navStyles.hidden)
-        this.topNavRef.current.classList.remove(navStyles.hidden)
+        this.fixedNavRef.current.classList.add(NavStyles.hidden)
+        this.topNavRef.current.classList.remove(NavStyles.hidden)
       }
     }
   }
@@ -42,16 +36,14 @@ class PrimaryNav extends React.Component {
       <div>
         <div
           ref={this.topNavRef}
-          className={`nav-container ${navStyles.navContainer} ${navStyles.topNav}`}
+          className={`nav-container ${NavStyles.navContainer} ${NavStyles.topNav}`}
         >
-          <h1 className={LogoStyles.navText}>UVM Cycling</h1>
           <Nav />
         </div>
         <div
           ref={this.fixedNavRef}
-          className={`nav-container ${navStyles.navContainer} ${navStyles.stickyNav} ${navStyles.hidden}`}
+          className={`nav-container ${NavStyles.navContainer} ${NavStyles.stickyNav} ${NavStyles.hidden}`}
         >
-          <h1 className={LogoStyles.navText}>UVM Cycling</h1>
           <Nav />
         </div>
       </div>

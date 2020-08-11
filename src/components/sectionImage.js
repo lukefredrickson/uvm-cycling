@@ -2,7 +2,6 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import SectionImageStyles from "./sectionImage.module.css"
-import Fade from "react-reveal/Fade"
 
 const SectionImage = props => (
   <StaticQuery
@@ -32,25 +31,23 @@ const SectionImage = props => (
       }
 
       return (
-        <Fade>
-          <div
-            className={`${SectionImageStyles.container} ${
-              props.left
-                ? SectionImageStyles.containerLeft
-                : SectionImageStyles.containerRight
-            }`}
-          >
-            <Img
-              className={`image ${SectionImageStyles.image}`}
-              alt={props.alt}
-              fluid={image.node.childImageSharp.fluid}
-            />
-            <div className={`${SectionImageStyles.textContainer}`}>
-              <h1>{props.header}</h1>
-              <p>{props.body}</p>
-            </div>
+        <div
+          className={`${SectionImageStyles.container} ${
+            props.left
+              ? SectionImageStyles.containerLeft
+              : SectionImageStyles.containerRight
+          }`}
+        >
+          <Img
+            className={`image ${SectionImageStyles.image}`}
+            alt={props.alt}
+            fluid={image.node.childImageSharp.fluid}
+          />
+          <div className={`${SectionImageStyles.textContainer}`}>
+            <h1>{props.header}</h1>
+            <p>{props.body}</p>
           </div>
-        </Fade>
+        </div>
       )
     }}
   />

@@ -6,6 +6,7 @@
   justify-content: flex-start;
   overflow: hidden;
   width: max-content;
+  min-width: max-content;
 }
 
 .coverText {
@@ -20,13 +21,4 @@
   font-size: 2rem;
   align-self: flex-end;
   margin: 0 1.5rem 0 0;
-}
-
-.navText {
-  font-family: "Josefin Slab";
-  font-weight: 700;
-  font-size: 2rem;
-  margin: 0rem;
-  color: #fff;
-  min-width: fit-content;
 }
