@@ -3,11 +3,13 @@ import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/homeLayout"
 import Hero from "../components/hero"
-import StickyNav from "../components/stickyNav.js"
+import HomeNav from "../components/homeNav.js"
 import ProfileContainer from "../components/profileContainer"
 import SectionImage from "../components/sectionImage"
+import Sponsors from "../components/sponsors"
 import AngleDivider from "../components/angleDivider"
 import WaveDivider from "../components/waveDivider"
+import WaveOpacityDivider from "../components/waveOpacityDivider"
 
 import Styles from "../styles/index.module.css"
 
@@ -16,18 +18,22 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <header>
-        <StickyNav />
+        <HomeNav />
       </header>
       <main>
         <Hero />
-        <div className={`divider ${Styles.container} ${Styles.divider}`}>
+        <div
+          className={`divider ${Styles.titleContainer} ${Styles.aboutTitleContainer}`}
+        >
           <h1
             className={`section-title ${Styles.sectionTitle} ${Styles.aboutTitle}`}
           >
             Who We Are
           </h1>
         </div>
-        <section className={`about  ${Styles.container} ${Styles.about}`}>
+        <section
+          className={`about-section  ${Styles.section} ${Styles.aboutSection}`}
+        >
           <AngleDivider fill="#111" />
           <SectionImage
             filename="team-1.jpg"
@@ -50,7 +56,7 @@ const IndexPage = () => {
         </section>
 
         <section
-          className={`profile-container ${Styles.container} ${Styles.profilesContainer}`}
+          className={`profile-section ${Styles.section} ${Styles.profilesSection}`}
         >
           <WaveDivider fill="#eee" />
           <h1
@@ -59,6 +65,20 @@ const IndexPage = () => {
             Meet the Officers
           </h1>
           <ProfileContainer />
+        </section>
+
+        <section
+          className={`sponsors-section ${Styles.section} ${Styles.sponsorsSection}`}
+        >
+          <WaveOpacityDivider fill="#007155" />
+          <div className={Styles.sponsorsContainer}>
+            <h1
+              className={`section-title ${Styles.sectionTitle} ${Styles.sponsorsTitle}`}
+            >
+              Our Sponsors
+            </h1>
+            <Sponsors />
+          </div>
         </section>
       </main>
     </Layout>

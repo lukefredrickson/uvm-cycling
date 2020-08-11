@@ -5,9 +5,11 @@ import FooterStyles from "./footer.module.css"
 import {
   FaFacebook,
   FaInstagram,
+  FaTwitter,
   FaStrava,
   FaEnvelope,
   FaBicycle,
+  FaGlobe,
 } from "react-icons/fa"
 
 const Footer = () => {
@@ -33,6 +35,9 @@ const Footer = () => {
           >
             <FaInstagram />
           </Social>
+          <Social link="https://twitter.com/UVM_cycling" text="@@UVM_cycling">
+            <FaTwitter />
+          </Social>
           <Social
             link="https://www.strava.com/clubs/uvm-cycling-team-1481"
             text="UVM Cycling Team"
@@ -46,6 +51,12 @@ const Footer = () => {
             <FaBicycle />
           </Social>
           <Social
+            link="https://thelynx.campuslabs.com/engage/organization/uvm-cycling"
+            text="UVM Clubs Page"
+          >
+            <FaGlobe />
+          </Social>
+          <Social
             link="https://list.uvm.edu/cgi-bin/wa?A0=UVMCYCLING"
             text="UVM Cycling ListServ"
           >
@@ -57,7 +68,11 @@ const Footer = () => {
       <div className={FooterStyles.copyright}>
         © {new Date().getFullYear()} UVM Cycling &nbsp;|&nbsp; Developed
         by&nbsp;
-        <a href="https://github.com/lukefredrickson" target="_blank">
+        <a
+          href="https://github.com/lukefredrickson"
+          rel="noreferrer"
+          target="_blank"
+        >
           Luke Fredrickson
         </a>
       </div>

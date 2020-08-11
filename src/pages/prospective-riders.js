@@ -8,7 +8,10 @@ import Styles from "../styles/index.module.css"
 
 const ProspectiveRiders = () => (
   <Layout>
-    <SEO title="Prospective Riders" />
+    <SEO
+      title="Prospective Riders"
+      description="Information for prospective riders of UVM Cycling. Learn about our racing seasons, how to get involved, what to expect on a race weekend, and more."
+    />
     <section className={`about  ${Styles.container} ${Styles.about}`}>
       <SectionImage
         filename="team-1.jpg"

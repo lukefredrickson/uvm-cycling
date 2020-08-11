@@ -3,7 +3,12 @@ import SocialStyles from "./social.module.css"
 
 const Social = props => {
   return (
-    <a href={props.link} target="_blank" className={SocialStyles.link}>
+    <a
+      href={props.link}
+      rel="noreferrer"
+      target="_blank"
+      className={SocialStyles.link}
+    >
       {props.children}
       <p>{props.text}</p>
     </a>

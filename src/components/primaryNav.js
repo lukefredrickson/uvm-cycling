@@ -3,7 +3,7 @@ import Nav from "./nav"
 import navStyles from "./nav.module.css"
 import LogoStyles from "./logo.module.css"
 
-class TopNav extends React.Component {
+class PrimaryNav extends React.Component {
   constructor(props) {
     super(props)
     this.topNavRef = React.createRef()
@@ -20,7 +20,9 @@ class TopNav extends React.Component {
   }
 
   trackScrolling = () => {
-    this.handleStickyNav()
+    if (this.topNavRef && this.fixedNavRef) {
+      this.handleStickyNav()
+    }
   }
 
   handleStickyNav() {
@@ -57,4 +59,4 @@ class TopNav extends React.Component {
   }
 }
 
-export default TopNav
+export default PrimaryNav

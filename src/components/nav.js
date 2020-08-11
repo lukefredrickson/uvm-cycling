@@ -22,23 +22,23 @@ const Nav = () => {
       <Link
         className={`nav-link ${navStyles.navLink}`}
         activeClassName={`nav-link--active ${navStyles.navLinkActive}`}
-        to="/page-2"
+        to="/calendar"
       >
         <h3>Calendar</h3>
       </Link>
       <Link
         className={`nav-link ${navStyles.navLink}`}
         activeClassName={`nav-link--active ${navStyles.navLinkActive}`}
-        to="/page-2"
+        to="/blog"
       >
-        <h3>Contact Us</h3>
+        <h3>Blog</h3>
       </Link>
       <Link
         className={`nav-link ${navStyles.navLink}`}
         activeClassName={`nav-link--active ${navStyles.navLinkActive}`}
-        to="/page-2"
+        to="/contact"
       >
-        <h3>Blog</h3>
+        <h3>Contact Us</h3>
       </Link>
     </nav>
   )

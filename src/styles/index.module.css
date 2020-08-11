@@ -1,23 +1,30 @@
-.container {
+.titleContainer {
+  min-height: 2rem;
+  padding: 4rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section {
   position: relative;
-  padding: 6rem 4rem 2rem 4rem;
+  padding: 6rem 4rem 4rem 4rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-.divider {
-  min-height: 2rem;
-  padding: 4rem 0 0 0;
+.aboutTitleContainer {
   background-color: #111;
 }
-
-.about {
+.aboutSection {
   background-color: #eee;
 }
-.profilesContainer {
+.profilesSection {
   background-color: #007155;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .sectionTitle {
   font-size: 4rem;
@@ -29,4 +36,22 @@
 .profilesTitle {
   margin-bottom: 4rem;
   color: #fff;
+}
+.sponsorsSection {
+  background-color: #b2d23e;
+}
+.sponsorsContainer {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  width: 70%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
+    0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
+}
+.sponsorsTitle {
+  margin-top: 4rem;
 }

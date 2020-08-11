@@ -1,0 +1,20 @@
+.image {
+  width: 15rem;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0 1rem 0 1rem;
+}
+.link:after {
+  height: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}

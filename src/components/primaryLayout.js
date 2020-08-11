@@ -1,8 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Footer from "./footer"
-import Nav from "./topNav"
-import WaveOpacityDivider from "./waveOpacityDivider"
+import Nav from "./primaryNav"
 
 const PrimaryLayout = ({ children }) => {
   return (
