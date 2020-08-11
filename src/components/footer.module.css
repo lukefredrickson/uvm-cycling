@@ -1,7 +1,44 @@
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 10rem;
   background-color: #111;
-  color: #fff;
+  color: #bbb;
+  padding: 5rem 6rem 2rem 6rem;
+}
+
+.horizontalContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.horizontalContainer div {
+  margin: 0;
+}
+
+.linksContainer {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.copyright {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+}
+
+.copyright a {
+  color: #bbb;
+}
+
+.copyright a:after {
+  background-color: #bbb;
+  height: 1px;
 }

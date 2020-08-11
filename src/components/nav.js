@@ -15,7 +15,7 @@ const Nav = () => {
       <Link
         className={`nav-link ${navStyles.navLink}`}
         activeClassName={`nav-link--active ${navStyles.navLinkActive}`}
-        to="/page-2"
+        to="/prospective-riders"
       >
         <h3>Prospective Riders</h3>
       </Link>

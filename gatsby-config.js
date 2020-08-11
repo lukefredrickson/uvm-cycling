@@ -33,7 +33,7 @@ module.exports = {
         fonts: [
           `Roboto Slab\:400,700,900`,
           `Roboto`,
-          `Satisfy`,
+          `Architects Daughter`,
           `Josefin Slab\:700`,
         ],
         display: "swap",

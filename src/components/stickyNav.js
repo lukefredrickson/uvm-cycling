@@ -1,17 +1,19 @@
 import React from "react"
-import Nav from "./nav"
 import navStyles from "./nav.module.css"
+import Nav from "./nav"
 
 class StickyNav extends React.Component {
   constructor(props) {
     super(props)
     this.navRef = React.createRef()
     this.state = { navOffsetTop: 0, height: 0 }
+    this.trackScrolling = this.trackScrolling.bind(this)
+    this.handleResize = this.handleResize.bind(this)
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.handleResize.bind(this))
-    document.addEventListener("scroll", this.trackScrolling)
+    document.addEventListener("scroll", this.trackScrolling, false)
+    window.addEventListener("resize", this.handleResize, this)
     this.setState({
       height: window.innerHeight,
       navOffsetTop: this.navRef.current.offsetTop,
@@ -19,8 +21,8 @@ class StickyNav extends React.Component {
   }
 
   componentWillUnmount() {
-    document.removeEventListener("scroll", this.trackScrolling)
-    window.removeEventListener("resize", this.handleResize.bind(this))
+    document.removeEventListener("scroll", this.trackScrolling, false)
+    window.removeEventListener("resize", this.handleResize, this)
   }
 
   trackScrolling = () => {
@@ -37,15 +39,20 @@ class StickyNav extends React.Component {
 
   handleStickyNav() {
     if (this.navRef && window.pageYOffset > this.state.navOffsetTop) {
-      this.navRef.current.classList.add(navStyles.topNav)
+      this.navRef.current.classList.add(navStyles.stickyNav)
+      this.navRef.current.classList.remove(navStyles.heroNav)
     } else {
-      this.navRef.current.classList.remove(navStyles.topNav)
+      this.navRef.current.classList.remove(navStyles.stickyNav)
+      this.navRef.current.classList.add(navStyles.heroNav)
     }
   }
 
   render() {
     return (
-      <div ref={this.navRef} className={`nav-container ${navStyles.bottomNav}`}>
+      <div
+        ref={this.navRef}
+        className={`nav-container ${navStyles.navContainer} ${navStyles.heroNav}`}
+      >
         <Nav />
       </div>
     )

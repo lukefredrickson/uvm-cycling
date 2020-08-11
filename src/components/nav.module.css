@@ -1,19 +1,41 @@
+.heroNav {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.topNav {
+  position: relative;
+  background-color: #111;
+}
+
+.stickyNav {
+  position: fixed;
+  top: 0px;
+  bottom: auto;
+  background-color: #111;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.navContainer {
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem 1rem 3rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
 .nav {
   width: 100%;
-  padding: 1rem 10% 1rem 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: background-color 0.3s ease-in-out;
-}
-
-.bottomNav {
-  position: absolute;
-  bottom: 0px;
-  z-index: 999;
-  width: 100%;
 }
 
 .navLink {
@@ -39,15 +61,4 @@
 .navLinkActive:after {
   height: 0px;
   min-height: 0px;
-}
-
-.topNav {
-  position: fixed;
-  top: 0px;
-  bottom: auto;
-  width: 100%;
-}
-
-.topNav > .nav {
-  background-color: rgba(0, 0, 0, 0.9);
 }
