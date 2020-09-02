@@ -25,6 +25,7 @@ const Nav = () => {
         >
           <h4>Prospective Riders</h4>
         </Link>
+        {/*
         <Link
           className={`nav-link ${NavStyles.navLink}`}
           activeClassName={`nav-link--active ${NavStyles.navLinkActive}`}
@@ -46,6 +47,7 @@ const Nav = () => {
         >
           <h4>Contact Us</h4>
         </Link>
+        */}
       </nav>
     </>
   )

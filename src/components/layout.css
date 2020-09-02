@@ -644,3 +644,25 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.titleContainer {
+  min-height: 2rem;
+  padding: 4rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section {
+  position: relative;
+  padding: 6rem 4rem 4rem 4rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sectionTitle {
+  font-size: 4rem;
+  font-weight: 700;
+}

@@ -24,15 +24,15 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Roboto Slab\:400,700,900`,
-          `Roboto`,
+          `Roboto Slab\:400,400i,700,700i,900`,
+          `Roboto\:400,400i,700,700i`,
           `Architects Daughter`,
           `Josefin Slab\:700`,
         ],

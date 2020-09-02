@@ -12,6 +12,7 @@ import WaveDivider from "../components/waveDivider"
 import WaveOpacityDivider from "../components/waveOpacityDivider"
 
 import Styles from "../styles/index.module.css"
+import SectionStyles from "../styles/sections.module.css"
 
 const IndexPage = () => {
   return (
@@ -23,44 +24,44 @@ const IndexPage = () => {
       <main>
         <Hero />
         <div
-          className={`divider ${Styles.titleContainer} ${Styles.aboutTitleContainer}`}
+          className={`divider ${SectionStyles.titleContainer} ${Styles.aboutTitleContainer}`}
         >
           <h1
-            className={`section-title ${Styles.sectionTitle} ${Styles.aboutTitle}`}
+            className={`section-title ${SectionStyles.sectionTitle} ${Styles.aboutTitle}`}
           >
             Who We Are
           </h1>
         </div>
         <section
-          className={`about-section  ${Styles.section} ${Styles.aboutSection}`}
+          className={`about-section  ${SectionStyles.section} ${Styles.aboutSection}`}
         >
-          <AngleDivider fill="#111" />
+          <AngleDivider fill="#222" />
           <SectionImage
-            filename="team-1.jpg"
+            filename="team-backlit.jpg"
             left={true}
-            header="Student run, student funded."
-            body="We do more with less, and we're pretty proud of it."
+            header="Student Run, Seriously Rad"
+            body="UVM Cycling is a student run club team dedicated to spreading, growing, and competing in the sport of cycling. We're a team of inclusive and rad riders who compete in road cycling, cyclocross, and mountain biking. On the team you'll find casual cyclists, hardcore racers, and everything in between."
           />
           <SectionImage
             filename="mtb-nats.jpg"
             left={false}
-            header="Dazzling. Dauntless. Delectable."
-            body="Modern cycling may be a science, but winning is nothing without panache. We wear our hearts on our sleeves, and our jorts short enough to risk public exposure."
+            header="A Force of Nature"
+            body="Reigning collegiate club national champions for cyclocross, D2 collegiate club national champions for mountain biking, and overall conference champions for both cyclocross and mountain biking for many years in a row."
           />
           <SectionImage
-            filename="send-it.jpg"
+            filename="mtb-action-2.jpg"
             left={true}
-            header="A force of nature."
-            body="Reigning National Champions for Cyclocross and Eastern Conference Champions for MTB."
+            header="Dazzling and Dauntless"
+            body="Modern cycling may be a science, but winning is nothing without panache. We wear our hearts on our sleeves, and our jorts short enough to risk public exposure. All abilities are welcome to join us—an enthusiasm for bikes is all we require."
           />
         </section>
 
         <section
-          className={`profile-section ${Styles.section} ${Styles.profilesSection}`}
+          className={`profile-section ${SectionStyles.section} ${Styles.profilesSection}`}
         >
-          <WaveDivider fill="#eee" />
+          <WaveDivider fill="#fff" />
           <h1
-            className={`section-title ${Styles.sectionTitle} ${Styles.profilesTitle}`}
+            className={`section-title ${SectionStyles.sectionTitle} ${Styles.profilesTitle}`}
           >
             Meet the Officers
           </h1>
@@ -68,12 +69,12 @@ const IndexPage = () => {
         </section>
 
         <section
-          className={`sponsors-section ${Styles.section} ${Styles.sponsorsSection}`}
+          className={`sponsors-section ${SectionStyles.section} ${Styles.sponsorsSection}`}
         >
           <WaveOpacityDivider fill="#007155" />
           <div className={Styles.sponsorsContainer}>
             <h1
-              className={`section-title ${Styles.sectionTitle} ${Styles.sponsorsTitle}`}
+              className={`section-title ${SectionStyles.sectionTitle} ${Styles.sponsorsTitle}`}
             >
               Our Sponsors
             </h1>

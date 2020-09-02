@@ -18,8 +18,26 @@ const Footer = () => {
       <div className={FooterStyles.horizontalContainer}>
         <div className={FooterStyles.linksContainer}>
           <Social
+            link="https://thelynx.campuslabs.com/engage/organization/uvm-cycling"
+            text="UVM Clubs Page"
+          >
+            <FaGlobe />
+          </Social>
+          <Social
+            link="https://list.uvm.edu/cgi-bin/wa?A0=UVMCYCLING"
+            text="UVM Cycling ListServ"
+          >
+            <FaEnvelope />
+          </Social>
+          <Social
             link="https://www.facebook.com/UVMcycling/"
             text="@UVMcycling"
+          >
+            <FaFacebook />
+          </Social>
+          <Social
+            link="https://www.facebook.com/groups/835039289944035/"
+            text="UVM Women's Cycling"
           >
             <FaFacebook />
           </Social>
@@ -35,7 +53,7 @@ const Footer = () => {
           >
             <FaInstagram />
           </Social>
-          <Social link="https://twitter.com/UVM_cycling" text="@@UVM_cycling">
+          <Social link="https://twitter.com/UVM_cycling" text="@UVM_cycling">
             <FaTwitter />
           </Social>
           <Social
@@ -49,18 +67,6 @@ const Footer = () => {
             text="Group Ride-Board"
           >
             <FaBicycle />
-          </Social>
-          <Social
-            link="https://thelynx.campuslabs.com/engage/organization/uvm-cycling"
-            text="UVM Clubs Page"
-          >
-            <FaGlobe />
-          </Social>
-          <Social
-            link="https://list.uvm.edu/cgi-bin/wa?A0=UVMCYCLING"
-            text="UVM Cycling ListServ"
-          >
-            <FaEnvelope />
           </Social>
         </div>
         <Logo />
