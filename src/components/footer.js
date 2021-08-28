@@ -1,6 +1,6 @@
 import React from "react"
 import Social from "./social"
-import Logo from "./Logo"
+import Logo from "./logo"
 import FooterStyles from "./footer.module.css"
 import {
   FaFacebook,
